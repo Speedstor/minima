@@ -10,7 +10,7 @@ layout: default
   {% if site.paginate %}
     {% assign posts = paginator.posts %}
   {% else %}
-    {% assign posts = site.pages | sort "last_modified_at" %}
+    {% assign posts = site.pages | sort:"last_modified_at" %}
   {% endif %}
 
   
